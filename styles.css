@@ -22,3 +22,15 @@ body{overflow-wrap:anywhere}
 @media(max-width:850px){.hero-grid{grid-template-columns:minmax(0,1fr) minmax(0,.8fr)}}
 @media(max-width:650px){.hero-grid{grid-template-columns:minmax(0,1fr)}.header-inner{padding-top:12px;padding-bottom:12px;row-gap:10px}.header-phone{margin-left:auto}.mobile-call{position:sticky;bottom:0;margin:0 12px 12px;line-height:1.4}.hero-visual{min-height:20rem}.visual-caption strong{font-size:1.5rem}.visual-caption small{font-size:.75rem}.header-phone small{font-size:.75rem}.eyebrow{font-size:.75rem}}
 @media(max-width:650px){.mobile-call{position:fixed;left:12px;right:12px;bottom:max(12px,env(safe-area-inset-bottom));margin:0}.footer-inner{padding-bottom:2rem}.header-phone{min-height:44px;display:flex;flex-direction:column;justify-content:center}}
+
+/* Click-to-call links */
+.header-phone[href^="tel:"],
+.about-phone[href^="tel:"],
+.contact-phone[href^="tel:"],
+.mobile-call[href^="tel:"]{cursor:pointer}
+.contact-phone[href^="tel:"]:hover,
+.about-phone[href^="tel:"]:hover,
+.header-phone[href^="tel:"]:hover{text-decoration:none;filter:brightness(.92)}
+@media(max-width:650px){
+  .contact-phone[href^="tel:"]{min-height:44px;display:inline-flex;align-items:center}
+}
