@@ -21,6 +21,9 @@ copyButton.addEventListener('click', async () => {
       if (copied) selection.removeAllRanges();
     }
   }
+  if (copied && typeof ym === 'function') {
+  ym(112868762, 'reachGoal', 'copy_phone');
+}
   copyStatus.textContent = copied
     ? 'Номер скопирован: +7 920 518-56-56'
     : 'Номер: +7 920 518-56-56. Выделите и скопируйте его через меню устройства или сочетанием Ctrl+C.';
