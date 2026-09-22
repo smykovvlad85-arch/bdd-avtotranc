@@ -234,5 +234,12 @@ ym(112868762,'init',{ssr:true,webvisor:true,clickmap:true,ecommerce:"dataLayer",
 <a href="#main">Наверх ↑</a>
 </div></footer>
 <a class="mobile-call" href="tel:+79205185656"><span aria-hidden="true">☎</span> Позвонить · 8 (920) 518-56-56</a>
+<script>
+document.querySelectorAll('a[href^="tel:"]').forEach(function(a){
+  a.addEventListener('click',function(){
+    if(typeof window.ym==='function'){ym(112868762,'reachGoal','phone_click');}
+  });
+});
+</script>
 </body>
 </html>
