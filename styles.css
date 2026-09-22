@@ -34,3 +34,30 @@ body{overflow-wrap:anywhere}
 @media(max-width:650px){
   .contact-phone[href^="tel:"]{min-height:44px;display:inline-flex;align-items:center}
 }
+
+
+/* Conversion-focused homepage */
+.trust-strip{padding:22px 0;border-bottom:1px solid var(--line);background:#fff}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.trust-item{padding:4px 0}
+.trust-item strong{display:block;font-size:1rem;line-height:1.35;margin-bottom:4px}
+.trust-item span{display:block;color:var(--muted);font-size:.8125rem;line-height:1.45}
+.commercial-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.commercial-card{border:1px solid var(--line);border-radius:4px;padding:25px;background:#fff;display:flex;flex-direction:column}
+.commercial-card h3{margin:0 0 8px;font-size:1.15rem;line-height:1.35}
+.commercial-card p{margin:0 0 18px;color:var(--muted);font-size:.9rem;line-height:1.55}
+.commercial-price{font-size:1.65rem;font-weight:800;line-height:1.15;margin-top:auto}
+.commercial-price small{display:block;font-size:.7rem;font-weight:500;color:var(--muted);margin-top:7px;line-height:1.4}
+.route-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.route-card{border-top:3px solid var(--navy);background:var(--pale);padding:25px;border-radius:3px}
+.route-card h3{margin:0 0 8px;font-size:1.2rem}
+.route-card p{margin:0 0 14px;color:var(--muted);font-size:.9rem}
+.route-card a{font-size:.875rem;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.office-note{display:flex;gap:16px;align-items:flex-start;margin-top:28px;padding:22px 24px;background:#fff;border:1px solid var(--line);border-radius:4px}
+.office-note strong{display:block;margin-bottom:4px}
+.office-note p{margin:0;color:var(--muted);font-size:.875rem}
+.hero-kicker{display:inline-flex;align-items:center;gap:8px;background:var(--pale);padding:8px 12px;border-radius:999px;font-size:.75rem;font-weight:700;margin-top:22px}
+.hero-kicker:before{content:"";width:7px;height:7px;border-radius:50%;background:var(--orange)}
+@media(max-width:1000px){.commercial-grid{grid-template-columns:repeat(2,1fr)}.trust-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:850px){.route-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.commercial-grid,.trust-grid{grid-template-columns:1fr}.office-note{padding:18px}.hero-kicker{margin-top:16px}}
